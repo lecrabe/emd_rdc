@@ -10,6 +10,7 @@ packages <- function(x){
 }
 
 ## Packages for geospatial data handling
+packages(sf)
 packages(raster)
 packages(rgeos)
 packages(rgdal)

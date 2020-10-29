@@ -51,12 +51,10 @@ if(!file.exists(emd_point_csv)){
   ####################  CREER LES CENTROIDES
   #############################################################
   c1 <- SpatialPointsDataFrame(gCentroid(emd_shp_conf,byid=T),
-                               emd_shp_conf@data,
-                               proj4string = proj_ea)
+                               emd_shp_conf@data)
   
   c2 <- SpatialPointsDataFrame(gCentroid(emd_shp_potl,byid=T),
-                               emd_shp_potl@data,
-                               proj4string = proj_ea)
+                               emd_shp_potl@data)
   
   centroid    <- union(c1,c2)
   dbf         <- centroid@data
@@ -92,5 +90,7 @@ if(!file.exists(emd_point_csv)){
   }, error = function(e) {
     cat(paste0("Nombre d'alertes selectionnées : ",nrow(selection)))
   })
+  
+  
   
 }
