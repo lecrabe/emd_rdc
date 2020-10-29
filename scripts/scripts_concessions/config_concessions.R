@@ -28,7 +28,7 @@ dir.create(cnm_dir ,showWarnings = F)
 
 ################### INITIALIZE PARAMETERS
 source(paste0(scriptdir,"packages.R"))
-source(paste0(rootdir,"param_concessions.R"))
+source(paste0(rootdir,"module_EMD/param_concessions.R"))
 
 
 

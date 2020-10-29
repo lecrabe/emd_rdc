@@ -2,6 +2,7 @@ root <- paste0(normalizePath("~"),"/")
 rootdir    <- paste0(normalizePath("~"),"/emd_rdc/")
 
 scriptdir  <- paste0(rootdir,"scripts/")
+script_alert_dir <- paste0(rootdir,"scripts/scripts_alerts/")
 
 data_dir   <- paste0(rootdir,"data/")
 gld_dir    <- paste0(data_dir,"glad/")
@@ -21,7 +22,7 @@ dir.create(stt_dir ,showWarnings = F)
 
 ################### INITIALIZE PARAMETERS
 source(paste0(scriptdir,"packages.R"))
-source(paste0(rootdir,"parameters.R"))
+source(paste0(rootdir,"module_GDA/parameters.R"))
 
 print(readOGR(zones_file,verbose = F)@data[,zone_field])
 

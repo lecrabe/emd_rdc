@@ -8,8 +8,7 @@
 ####################################################################################
 ###### CONFIGURATION
 ####################################################################################
-source(paste0(normalizePath("~"),
-              "/emd_rdc/scripts/scripts_concessions/",
+source(paste0(normalizePath("~"),"/emd_rdc/scripts/scripts_concessions/",
               "config_concessions.R"))
 
 ####################################################################################
